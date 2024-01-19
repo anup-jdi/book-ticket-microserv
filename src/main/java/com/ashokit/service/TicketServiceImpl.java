@@ -29,9 +29,7 @@ public class TicketServiceImpl implements TicketService{
         db.put(id,t);
         return new ResponseEntity<>(t,HttpStatus.CREATED);
     }
-   public int addNum(int a,int b){
-        return a+b;
-   }
+
     @Override
     public ResponseEntity<Collection<Ticket>> getAllTickets() {
         System.out.println(db);
